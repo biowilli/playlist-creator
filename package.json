@@ -1,0 +1,34 @@
+{
+  "name": "playlist-creator",
+  "version": "1.0.0",
+  "description": "A application for creating and organizing Spotify playlists.",
+  "main": "initalapp.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js",
+    "top50": "node app.js",
+    "genres": "node library-genres.js",
+    "organize": "node organize-all-by-genre.js",
+    "dj": "node dj-harmonizer.js",
+    "harmonizer": "node dj-harmonizer.js",
+    "list": "node list-playlists.js",
+    "clean": "node delete-recent-playlists.js",
+    "dev": "npm run start",
+    "help": "echo '\n🎵 Spotify Playlist Creator - Available Commands:\n\n📱 Main Features:\n  npm start        - Create Top 50 playlist from your most played tracks\n  npm run top50    - Same as start (alias)\n  npm run genres   - Organize library by genres\n  npm run organize - Organize all tracks by genre\n\n🎧 DJ Tools:\n  npm run dj       - DJ Harmonizer (WIP - limited by Spotify API)\n  npm run harmonizer - Same as dj (alias)\n\n🔧 Utilities:\n  npm run list     - List all your playlists\n  npm run clean    - Delete recent playlists\n  npm run help     - Show this help\n'"
+  },
+  "keywords": [
+    "spotify",
+    "playlist",
+    "music",
+    "api"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "express": "^4.21.2"
+  }
+}
